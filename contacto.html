@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesar Brugiati site</title>
+    <link rel="favicon" href="favicon.ico">
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        
+        }
+            input[type=reset] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+
+        }
+        input[type=reset]:hover {
+            background-color: #45a049;
+
+        }
+
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Cesar Brugiati</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Perfil</a></li>
+                <li><a href="preferencias.html">Habilidades</a></li>
+                <li><a href="audiovisuales.html">Proyectos</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="margin: 15px;">
+        Contacto
+    </h2>
+    <hr>
+    <section>
+        <div class="contenedor-formulario">
+            <form>
+
+                <label for="nombre" id="nombre"> Nombre:</label>
+                <Input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre" required></Input>
+
+                <label for="apellido" id="apellido"> Apellido:</label>
+                <Input type="text" id="apellido" name="apellido" placeholder="Escribe tu Apellido" required></Input>
+
+                <label for="mail" id="mail"> Email:</label>
+                <Input type="email" id="mail" name="maile" placeholder="Escribe tu Email" required></Input>
+
+                <label for="Pais"> País: </label>
+                <select name="Pais" id="Pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Bolivia">Boolivia</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Panamá" selected>Panamá</option>
+                </select>
+
+                <label for="comentario"> Comentario:</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe un comentario" required></textarea>
+
+                <label for="motivo"> Motivo de la consulta</label>
+                <input type="radio" id="motivo" name="Motivo"> <i>Soy tu fan</i>
+                <input type="radio" id="motivo" name="Motivo"> <i>Motivos Comerciales</i>
+                <input type="radio" id="motivo" name="Motivo"> <i>Curriculum</i>
+                <input type="radio" id="motivo" name="Motivo"> <i>Ideas</i>
+                <input type="radio" id="motivo" name="Motivo"> <i>Fotografia</i>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar formulario">
+
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>cbrugiati &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
